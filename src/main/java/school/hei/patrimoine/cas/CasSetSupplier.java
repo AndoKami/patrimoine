@@ -1,6 +1,7 @@
 package school.hei.patrimoine.cas;
 
 import school.hei.patrimoine.cas.example.CasBako;
+import school.hei.patrimoine.cas.example.CasTiana;
 import school.hei.patrimoine.modele.Argent;
 import school.hei.patrimoine.modele.Devise;
 
@@ -11,6 +12,6 @@ public class CasSetSupplier implements Supplier<CasSet> {
   @Override
   public CasSet get() {
     Argent deviseAsArgent = new Argent(0, Devise.MGA);
-    return new CasSet(Set.of(new CasBako()), deviseAsArgent);
+    return new CasSet(Set.of(new CasTiana()), deviseAsArgent);
   }
 }
